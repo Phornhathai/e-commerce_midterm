@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>e-Commerce Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+  <section id="nav-topbar">
+    <div class="container overflow-visible">
+      <div class="topbar-content">
+        <div class="contact-content">
+          <!-- icon mobile -->
+          <div class="nav-icon1">
+            <div class="contact-number">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e884fbeaf853f075555d17_Call.svg"
+                loading="lazy" alt="">
+              <!-- contact number -->
+              <div class="contact-number text-white">+001234567890</div>
+            </div>
+          </div>
+
+          <div id="button" class="topbar-left-menu">
+            <div class="text-white">Get 50% Off on Selected Items &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;Shop Now</div>
+          </div>
+          <div class="topbar-menu">
+            <!-- dropdown for currency -->
+            <div class="dropdown currency-list-dropdown">
+              <div class="dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                Language
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Thai</a></li>
+                <li><a class="dropdown-item" href="#">Japanese</a></li>
+              </ul>
+            </div>
+            <!-- dropdown for location -->
+            <div class="dropdown location-list-dropdown">
+              <div class="dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                Location
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">USA</a></li>
+                <li><a class="dropdown-item" href="#">Thailand</a></li>
+                <li><a class="dropdown-item" href="#">Japan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- แสดงเมนูหลักของเว็บไซต์  -->
+  <section id="navbar-logo">
+    <div class="navbar-logo-left-container">
+      <div class="container overflow-visible-wrapper">
+        <div class="navbar-wrapper">
+          <a href="home.html" class="navbar-brand w-nav-brand"><img
+              src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg"
+              loading="lazy" alt="" class="logo-iimage"></a>
+
+          <!-- menu-category -->
+          <div class="dropdown shopcart-list-dropdown">
+            <div class="dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown">
+              Category
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item fw-bold" href="#">Furniture</a></li>
+                <li><a class="dropdown-item fw-bold" href="#">Cosmetics</a></li>
+                <li><a class="dropdown-item fw-bold" href="#">Hand Bag</a></li>
+              </ul>
+            </div>
+            <ul><a href="product.html" class="nav-link fw-bold">Our Products</a></ul>
+            <ul><a href="payment.html" class="nav-link fw-bold">Payment</a></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-log-right-container">
+      <div class="right-menu">
+        <div class="account">
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+            </svg>
+            Account
+          </p>
+        </div>
+        <div class="cart">
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+            </svg>
+            Cart
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="banner-area">
+    <div class="container-banner">
+      <div class="banner-inner">
+        <div class="banner-content">
+          <div class="banner-title">
+            <h1>Shopping And</h1>
+            <h1>department Store</h1>
+          </div>
+          <div class="banner-paragraph">
+            <p>Shopping is a bit of a relaxing hobby for me, which is sometimes troubling for the bank balance.</p>
+          </div>
+        </div>
+        <div class="banner-button">
+          <div class="btn-wrapper">
+            <div class="button-color">Learn More</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-stage-wrap">
+      <div class="banner-stage-bg">
+        <img
+          src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9b930e006824963189865_bg-stage.png"
+          loading="lazy" sizes="(max-width: 1439px) 100vw, 1440px"
+          srcset="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9b930e006824963189865_bg-stage-p-500.png 500w, https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9b930e006824963189865_bg-stage-p-800.png 800w, https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9b930e006824963189865_bg-stage-p-1080.png 1080w, https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9b930e006824963189865_bg-stage.png 1440w"
+          alt="">
+      </div>
+      <div class="banner-product-image-one">
+        <img
+          src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e660afc23a10a53523_other-min.png"
+          loading="lazy" alt="">
+      </div>
+      <div class="banner-product-image-two">
+        <img
+          src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e75b939fd1159c029e_tour-min.png"
+          loading="lazy" alt="">
+      </div>
+      <div class="banner-product-image-three">
+        <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9c0607f75e4aad54b94a0_ele.png"
+          loading="lazy" alt="">
+      </div>
+      <div class="banner-product-image-four">
+        <img
+          src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e7037f3b07ebcf202d_snaks-min.png"
+          loading="lazy" alt="">
+      </div>
+    </div>
+
+  </section>
+  <!-- แสดง top selling products -->
+  <section id="products-nav-area">
+    <div class="container-products-filter">
+      <div class="filter-menu">
+        <div class="dropdown dropdown-headphone-type">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Headphone Type
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Type1</a></li>
+            <li><a class="dropdown-item" href="#">Type2</a></li>
+            <li><a class="dropdown-item" href="#">Type3</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-price-type">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Price
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Type1</a></li>
+            <li><a class="dropdown-item" href="#">Type2</a></li>
+            <li><a class="dropdown-item" href="#">Type3</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-reivew-type">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Review
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Type1</a></li>
+            <li><a class="dropdown-item" href="#">Type2</a></li>
+            <li><a class="dropdown-item" href="#">Type3</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-material-type">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Material
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Type1</a></li>
+            <li><a class="dropdown-item" href="#">Type2</a></li>
+            <li><a class="dropdown-item" href="#">Type3</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-offer-type">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Offer
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Type1</a></li>
+            <li><a class="dropdown-item" href="#">Type2</a></li>
+            <li><a class="dropdown-item" href="#">Type3</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-color-type">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Color
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Type1</a></li>
+            <li><a class="dropdown-item" href="#">Type2</a></li>
+            <li><a class="dropdown-item" href="#">Type3</a></li>
+          </ul>
+        </div>
+        <div class="search-form-products">
+          <form action="#">
+            <div class="input-group">
+              <input type="text" class="form-control rounded search-product"
+                placeholder="Search Our Product by name or Category">
+              <div class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="sort-by">
+        <div class="dropdown dropdown-sort-type">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort by
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Type1</a></li>
+            <li><a class="dropdown-item" href="#">Type2</a></li>
+            <li><a class="dropdown-item" href="#">Type3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="all-products">
+    <div class="products-list">
+      <div class="title-wrap">
+        <h3 class="section-title text-center text-capitalize">Our Products</h3>
+      </div>
+      <div class="container-all-products">
+        <!-- รายละเอียดของสินค้าแต่ละรายการ  -->
+        <div class="promotion-product-lists">
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e563db5537881bbfcf_instax%20mini%209-min.png"
+                class="deal-image" alt="product1">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Instax Mini 9</h5>
+                  <h5 class="card-title product-price">$99</h5>
+                </div>
+                <div class="product-detial">
+                  <p class="card-text product-detail">Selfie mode and selfie mirror, Macro mode</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(121)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html"> <a href="add-cart.html">
+                        <div class="button-color">Add Cart</div>
+                      </a></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e48b497e63cc46b800_base%20camp%20duffel%2002-min.png"
+                loading="lazy" alt="product2" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Base Camp Duffel M</h5>
+                  <h5 class="card-title product-price">$159</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Table with air purifier, stained veneer/black</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(150)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html"> <a href="add-cart.html">
+                        <div class="button-color">Add Cart</div>
+                      </a></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e7e006821d3b04db74_Tote%20Medium-min.png"
+                loading="lazy" alt="product3" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Tote e Medium</h5>
+                  <h5 class="card-title product-price">$239</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Exquisite Craftsmanship with Premium Canvas and Full Grain Leather
+                    🌟</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(130)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html"> <a href="add-cart.html">
+                        <div class="button-color">Add Cart</div>
+                      </a></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e74b769109fd2f245a_tomford%20watch-min.png"
+                loading="lazy" alt="product4" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">HomePod mini</h5>
+                  <h5 class="card-title product-price">$239</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Table with air purifier, stained veneer/black</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(140)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html"> <a href="add-cart.html">
+                        <div class="button-color">Add Cart</div>
+                      </a></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e563db5537881bbfcf_instax%20mini%209-min.png"
+                class="deal-image" alt="product1">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Instax Mini 9</h5>
+                  <h5 class="card-title product-price">$99</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Selfie mode and selfie mirror, Macro mode</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(121)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html"> <a href="add-cart.html">
+                        <div class="button-color">Add Cart</div>
+                      </a></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e48b497e63cc46b800_base%20camp%20duffel%2002-min.png"
+                loading="lazy" alt="product2" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Base Camp Duffel M</h5>
+                  <h5 class="card-title product-price">$159</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Table with air purifier, stained veneer/black</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(150)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html"> <a href="add-cart.html">
+                        <div class="button-color">Add Cart</div>
+                      </a></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e7e006821d3b04db74_Tote%20Medium-min.png"
+                loading="lazy" alt="product3" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Tote e Medium</h5>
+                  <h5 class="card-title product-price">$239</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Exquisite Craftsmanship with Premium Canvas and Full Grain Leather
+                    🌟</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(130)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html"> <a href="add-cart.html">
+                        <div class="button-color">Add Cart</div>
+                      </a></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e74b769109fd2f245a_tomford%20watch-min.png"
+                loading="lazy" alt="product4" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">HomePod mini</h5>
+                  <h5 class="card-title product-price">$239</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Table with air purifier, stained veneer/black</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(140)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html"> <a href="add-cart.html">
+                        <div class="button-color">Add Cart</div>
+                      </a></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e563db5537881bbfcf_instax%20mini%209-min.png"
+                class="deal-image" alt="product1">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Instax Mini 9</h5>
+                  <h5 class="card-title product-price">$99</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Selfie mode and selfie mirror, Macro mode</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(121)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html">
+                      <div class="button-color">Add Cart</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e48b497e63cc46b800_base%20camp%20duffel%2002-min.png"
+                loading="lazy" alt="product2" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Base Camp Duffel M</h5>
+                  <h5 class="card-title product-price">$159</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Table with air purifier, stained veneer/black</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(150)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html">
+                      <div class="button-color">Add Cart</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e7e006821d3b04db74_Tote%20Medium-min.png"
+                loading="lazy" alt="product3" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">Tote e Medium</h5>
+                  <h5 class="card-title product-price">$239</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Exquisite Craftsmanship with Premium Canvas and Full Grain Leather
+                    🌟</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(130)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html">
+                      <div class="button-color">Add Cart</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promotion-wrap">
+            <div class="card product" style="width: 18rem;">
+              <img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e74b769109fd2f245a_tomford%20watch-min.png"
+                loading="lazy" alt="product4" class="deal-image">
+              <div class="card-body product-content">
+                <div class="product-title">
+                  <h5 class="card-title product-title">HomePod mini</h5>
+                  <h5 class="card-title product-price">$239</h5>
+                </div>
+
+                <div class="product-detial">
+                  <p class="card-text product-detail">Table with air purifier, stained veneer/black</p>
+                </div>
+                <div class="product-rating">
+                  <span>
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                    <img
+                      src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                      loading="lazy" alt="" class="product-star">
+                  </span>
+                  <div class="total-rating">(140)</div>
+                </div>
+                <div class="banner-button">
+                  <div class="btn-wrapper">
+                    <a href="add-cart.html">
+                      <div class="button-color">Add Cart</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="footer-area">
+    <div class="container-footer">
+      <div class="footer-top">
+        <div class="footer-nav-payment">
+          <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg"
+            loading="lazy" alt="" class="footer-logo" style="padding-bottom: 10px;">
+          <p class="footer-paragraph mb-40">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim velit mollit.</p>
+          <h4 class="footer-title">Accepted Payments</h4>
+          <div class="payment-nav">
+            <div class="payment-single-item"><img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63eb1ce8816711ebecac46d8_stripe.png"
+                loading="lazy" alt=""></div>
+            <div class="payment-single-item"><img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63eb1ce82d440b7ab84a993f_visa.png"
+                loading="lazy" alt=""></div>
+            <div class="payment-single-item"><img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63eb1ce8f032504012a5896b_Mastercard.png"
+                loading="lazy" alt=""></div>
+            <div class="payment-single-item"><img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e48b497e6ce846b7ff_Amazon.png"
+                loading="lazy" alt=""></div>
+            <div class="payment-single-item"><img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e4707380264b25e680_ApplePay.png"
+                loading="lazy" alt=""></div>
+            <div class="payment-single-item"><img
+                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63eb1f55dc68c5ee83d0cbf8_GooglePay.png"
+                loading="lazy" alt=""></div>
+          </div>
+        </div>
+        <div class="footer-nav-department">
+          <ul role="list" class="department-list">
+            <h2 class="footer-title">Department</h2>
+            <li class="list-item">Fashion</li>
+            <li class="list-item">Education Product</li>
+            <li class="list-item">Frozen Food</li>
+            <li class="list-item">Beauty Products</li>
+            <li class="list-item">Fitness</li>
+            <li class="list-item">Furniture</li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <ul role="list" class="about-us-list">
+            <h2 class="footer-title">About us</h2>
+            <li class="list-item">About shopcart</li>
+            <li class="list-item">Careers</li>
+            <li class="list-item">News &amp; Blog</li>
+            <li class="list-item">Help</li>
+            <li class="list-item">Press Center</li>
+            <li class="list-item">Shop by location</li>
+            <li class="list-item">Shopcart brands</li>
+            <li class="list-item">Affiliate &amp; Partners</li>
+            <li class="list-item">Ideas &amp; Guides</li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <ul role="list" class="services-list">
+            <h2 class="footer-title">Services</h2>
+            <li class="list-item">Gift Card</li>
+            <li class="list-item">Mobile App</li>
+            <li class="list-item">Shipping &amp; Delivery</li>
+            <li class="list-item">Order Pickup</li>
+            <li class="list-item">Account Signup</li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+
+          <ul role="list" class="help-list">
+            <h2 class="footer-title">Help</h2>
+            <li class="list-item">Shopcart Help</li>
+            <li class="list-item">Returns</li>
+            <li class="list-item">track orders</li>
+            <li class="list-item">contact us</li>
+            <li class="list-item">feedback</li>
+            <li class="list-item">Security &amp; Fraud</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="copyrigth-content">
+
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

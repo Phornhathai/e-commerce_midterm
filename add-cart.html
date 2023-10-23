@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e-Commerce Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <section id="nav-topbar">
+        <div class="container overflow-visible">
+            <div class="topbar-content">
+                <div class="contact-content">
+                    <!-- icon mobile -->
+                    <div class="nav-icon1">
+                        <div class="contact-number">
+                            <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e884fbeaf853f075555d17_Call.svg"
+                                loading="lazy" alt="">
+                            <!-- contact number -->
+                            <div class="contact-number text-white">+001234567890</div>
+                        </div>
+                    </div>
+
+                    <div id="button" class="topbar-left-menu">
+                        <div class="text-white">Get 50% Off on Selected Items &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;Shop
+                            Now</div>
+                    </div>
+                    <div class="topbar-menu">
+                        <!-- dropdown for currency -->
+                        <div class="dropdown currency-list-dropdown">
+                            <div class="dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                                Language
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Thai</a></li>
+                                <li><a class="dropdown-item" href="#">Japanese</a></li>
+                            </ul>
+                        </div>
+                        <!-- dropdown for location -->
+                        <div class="dropdown location-list-dropdown">
+                            <div class="dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                                Location
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">USA</a></li>
+                                <li><a class="dropdown-item" href="#">Thailand</a></li>
+                                <li><a class="dropdown-item" href="#">Japan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- แสดงเมนูหลักของเว็บไซต์  -->
+    <section id="navbar-logo">
+        <div class="navbar-logo-left-container">
+            <div class="container overflow-visible-wrapper">
+                <div class="navbar-wrapper">
+                    <a href="home.html" class="navbar-brand w-nav-brand"><img
+                            src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg"
+                            loading="lazy" alt="" class="logo-iimage"></a>
+
+                    <!-- menu-category -->
+                    <div class="dropdown shopcart-list-dropdown">
+                        <div class="dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown">
+                            Category
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold" href="#">Furniture</a></li>
+                                <li><a class="dropdown-item fw-bold" href="#">Cosmetics</a></li>
+                                <li><a class="dropdown-item fw-bold" href="#">Hand Bag</a></li>
+                            </ul>
+                        </div>
+                        <ul><a href="product.html" class="nav-link fw-bold">Our Products</a></ul>
+                        <ul><a href="payment.html" class="nav-link fw-bold">Payment</a></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-log-right-container">
+            <div class="right-menu">
+                <div class="account">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg>
+                        Account
+                    </p>
+                </div>
+                <div class="cart">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                        </svg>
+                        Cart
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="navigation-menu">
+        <div class="navigation">
+            <a href="#" class="text-secondary">Electronics /</a>
+            <a href="#" class="text-secondary">Audio /</a>
+            <a href="#" class="text-secondary">Headphones /</a>
+            <a href="#" class="text-secondary">Shop Headphone by Type /</a>
+            <a href="#" class="text-secondary fw-bold">airpods-max</a>
+        </div>
+    </section>
+    <!-- แสดง รายละเอียดใน cart -->
+    <section id="cart-product">
+        <div class="product-in-cart">
+            <div class="image-product">
+                <div class="image-main-preview">
+                    <img class="panel__image"
+                        src="https://lzd-img-global.slatic.net/g/p/4acec568943d766bf67ca91f09b0f988.jpg_720x720q80.jpg_.webp">
+                </div>
+                <div class="image-sub-preview">
+                    <img class="pdp-mod-common-image item-gallery__thumbnail-image"
+                        alt="หูฟังบลูทูธ หูฟังครอบหู หูฟังออกกำลังกาย ไร้สาย หูฟัง Bluetooth Headphone Stereo ใส่เมมได้ คุยโทรศัพท์ได้ ใหม่ หูฟัง Bluetooth ของ Explosive Macaron Headset Y08. "
+                        src="https://lzd-img-global.slatic.net/g/p/6966cfc3e7f4e0111c3b7e039d5febf9.jpg_120x120q80.jpg_.webp">
+                    <img class="pdp-mod-common-image item-gallery__thumbnail-image"
+                        alt="หูฟังบลูทูธ หูฟังครอบหู หูฟังออกกำลังกาย ไร้สาย หูฟัง Bluetooth Headphone Stereo ใส่เมมได้ คุยโทรศัพท์ได้ ใหม่ หูฟัง Bluetooth ของ Explosive Macaron Headset Y08. "
+                        src="https://lzd-img-global.slatic.net/g/p/6966cfc3e7f4e0111c3b7e039d5febf9.jpg_120x120q80.jpg_.webp">
+                    <img class="pdp-mod-common-image item-gallery__thumbnail-image"
+                        alt="หูฟังบลูทูธ หูฟังครอบหู หูฟังออกกำลังกาย ไร้สาย หูฟัง Bluetooth Headphone Stereo ใส่เมมได้ คุยโทรศัพท์ได้ ใหม่ หูฟัง Bluetooth ของ Explosive Macaron Headset Y08. "
+                        src="https://lzd-img-global.slatic.net/g/p/6966cfc3e7f4e0111c3b7e039d5febf9.jpg_120x120q80.jpg_.webp">
+                    <img class="pdp-mod-common-image item-gallery__thumbnail-image"
+                        alt="หูฟังบลูทูธ หูฟังครอบหู หูฟังออกกำลังกาย ไร้สาย หูฟัง Bluetooth Headphone Stereo ใส่เมมได้ คุยโทรศัพท์ได้ ใหม่ หูฟัง Bluetooth ของ Explosive Macaron Headset Y08. "
+                        src="https://lzd-img-global.slatic.net/g/p/6966cfc3e7f4e0111c3b7e039d5febf9.jpg_120x120q80.jpg_.webp">
+                </div>
+            </div>
+            <div class="product-detail">
+                <div class="product-title">
+                    <h2 class="text-capitalize fw-bold fw-1">airpods-max</h2>
+                </div>
+                <div class="product-detial">
+                    <p class="text-capitalize fw-4">Selfie mode and selfie mirror, Macro mode</p>
+                </div>
+                <div class="product-content">
+                    <div class="product-rating">
+                        <span>
+                            <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                loading="lazy" alt="" class="product-star">
+                            <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                loading="lazy" alt="" class="product-star">
+                            <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                loading="lazy" alt="" class="product-star">
+                            <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                loading="lazy" alt="" class="product-star">
+                            <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e9d9ee08987e0ffb064bca_Star.svg"
+                                loading="lazy" alt="" class="product-star">
+                        </span>
+                        <div class="total-rating">(121)</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="product-price">
+                    <h3>$549.00 or 99.99/month</h3>
+                    <p class="text-capitalize fw-4">Suggest payment with 6 months special financial</p>
+                </div>
+                <div class="product-color">
+                    <span>
+                        <img class="image" alt=""
+                            src="https://lzd-img-global.slatic.net/g/p/de192da36159726ac0ffaadf5be83023.jpg_80x80q80.jpg_.webp"
+                            data-spm-anchor-id="a2o4m.pdp_revamp.0.i0.6b56155fBnbKIj">
+                    </span>
+                    <span>
+                        <img class="image" alt=""
+                            src="https://lzd-img-global.slatic.net/g/p/ea88a852ccdbbd51fed94a41a3b02f64.jpg_80x80q80.jpg_.webp"
+                            data-spm-anchor-id="a2o4m.pdp_revamp.0.i0.6b56155fBnbKIj">
+                    </span>
+                    <span><img class="image" alt=""
+                            src="https://lzd-img-global.slatic.net/g/p/5f0864329ad933bd6d144730b1abe987.jpg_80x80q80.jpg_.webp">
+                    </span>
+                    <span>
+                        <img class="image" alt=""
+                            src="https://lzd-img-global.slatic.net/g/p/426e16cd243841b157a3fe087b07a460.jpg_80x80q80.jpg_.webp"
+                            data-spm-anchor-id="a2o4m.pdp_revamp.0.i3.6b56155fBnbKIj">
+                    </span>
+                </div>
+                <hr>
+                <div class="container-quantity">
+                    <div class="btn-group" role="group" aria-label="Plus and Minus Buttons">
+                        <button type="button" class="btn btn-light" id="minus">-</button>
+                        <button type="" class="btn btn-light" id="quantity">1</button>
+                        <button type="button" class="btn btn-light" id="plus">+</button>
+                    </div>
+                    <div class="remaining-item">
+                        <p class="fw-5">only <span style="color: orange;" class="fw-bold">12 items</span> left!</p>
+                        <p class="fw-5">Don't miss it</p>
+                    </div>
+                </div>
+                <div class="button-submit">
+                    <div class="button-buynow">
+                        <div class="btn-wrapper">
+                            <div class="button-color">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="button-addcart">
+                        <div class="btn-wrapper">
+                            <div class="button-color">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-type">
+                    <div class="free-delivery-type">
+                        <span>
+                            <h3 class="fw-bold">Free Delivery
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-truck" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                            </h3>
+                        </span>
+                        <p class="fw-4" style="text-decoration: underline;">Enter your postal code for Delivery
+                            Availability</p>
+                    </div>
+                    <div class="return-delivery-type">
+                        <h3 class="fw-bold">Return Delivery
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-truck" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                        </h3>
+                        <p class="fw-4">Free 30days Delivery Returns. <span
+                                style="text-decoration: underline;">Details</span></p>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <hr>
+    <section id="footer-area">
+        <div class="container-footer">
+            <div class="footer-top">
+                <div class="footer-nav-payment">
+                    <img src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg"
+                        loading="lazy" alt="" class="footer-logo" style="padding-bottom: 10px;">
+                    <p class="footer-paragraph mb-40">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                        amet sint.
+                        Velit officia consequat duis enim velit mollit.</p>
+                    <h4 class="footer-title">Accepted Payments</h4>
+                    <div class="payment-nav">
+                        <div class="payment-single-item"><img
+                                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63eb1ce8816711ebecac46d8_stripe.png"
+                                loading="lazy" alt=""></div>
+                        <div class="payment-single-item"><img
+                                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63eb1ce82d440b7ab84a993f_visa.png"
+                                loading="lazy" alt=""></div>
+                        <div class="payment-single-item"><img
+                                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63eb1ce8f032504012a5896b_Mastercard.png"
+                                loading="lazy" alt=""></div>
+                        <div class="payment-single-item"><img
+                                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e48b497e6ce846b7ff_Amazon.png"
+                                loading="lazy" alt=""></div>
+                        <div class="payment-single-item"><img
+                                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63e8c4e4707380264b25e680_ApplePay.png"
+                                loading="lazy" alt=""></div>
+                        <div class="payment-single-item"><img
+                                src="https://assets-global.website-files.com/63e857eaeaf853471d5335ff/63eb1f55dc68c5ee83d0cbf8_GooglePay.png"
+                                loading="lazy" alt=""></div>
+                    </div>
+                </div>
+                <div class="footer-nav-department">
+                    <ul role="list" class="department-list">
+                        <h2 class="footer-title">Department</h2>
+                        <li class="list-item">Fashion</li>
+                        <li class="list-item">Education Product</li>
+                        <li class="list-item">Frozen Food</li>
+                        <li class="list-item">Beauty Products</li>
+                        <li class="list-item">Fitness</li>
+                        <li class="list-item">Furniture</li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul role="list" class="about-us-list">
+                        <h2 class="footer-title">About us</h2>
+                        <li class="list-item">About shopcart</li>
+                        <li class="list-item">Careers</li>
+                        <li class="list-item">News &amp; Blog</li>
+                        <li class="list-item">Help</li>
+                        <li class="list-item">Press Center</li>
+                        <li class="list-item">Shop by location</li>
+                        <li class="list-item">Shopcart brands</li>
+                        <li class="list-item">Affiliate &amp; Partners</li>
+                        <li class="list-item">Ideas &amp; Guides</li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul role="list" class="services-list">
+                        <h2 class="footer-title">Services</h2>
+                        <li class="list-item">Gift Card</li>
+                        <li class="list-item">Mobile App</li>
+                        <li class="list-item">Shipping &amp; Delivery</li>
+                        <li class="list-item">Order Pickup</li>
+                        <li class="list-item">Account Signup</li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+
+                    <ul role="list" class="help-list">
+                        <h2 class="footer-title">Help</h2>
+                        <li class="list-item">Shopcart Help</li>
+                        <li class="list-item">Returns</li>
+                        <li class="list-item">track orders</li>
+                        <li class="list-item">contact us</li>
+                        <li class="list-item">feedback</li>
+                        <li class="list-item">Security &amp; Fraud</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="copyrigth-content">
+
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var quantity = 1;
+
+            $("#minus").click(function () {
+                if (quantity > 1) {
+                    quantity--;
+                    $("#quantity").text(quantity);
+                }
+            });
+
+            $("#plus").click(function () {
+                quantity++;
+                $("#quantity").text(quantity);
+            });
+        });
+    </script>
+</body>
+
+</html>
