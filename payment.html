@@ -16,7 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body>
 
   <section id="nav-topbar">
 
@@ -122,35 +122,14 @@
   <section id="paid-products">
     <div class="container-payment">
       <div class="left-detail-payment">
-        <div class="reiview-items">
-          <div class="image-detail">
-            <div>
-              <h3 class="fw-bold">Reviews Item And Shipping</h3>
-            </div>
-            <img class="image" width="30%" height="" alt=""
-              src="https://lzd-img-global.slatic.net/g/p/426e16cd243841b157a3fe087b07a460.jpg_80x80q80.jpg_.webp"
-              data-spm-anchor-id="a2o4m.pdp_revamp.0.i3.6b56155fBnbKIj">
-            
-          </div>
-          <div class="products-detail1-name-price">
-            <div class="products-details">
-              <h4 class="fw-bold">Airpods-Max</h4>
-              <p class="product-price fw-4">$549</p>
-            </div>
-            <div class="products-color">
-              <p class="fw-bold">Color : Pink</p>
-              <p class="fw-4">Qoantity : 01</p>
-            </div>
-          </div>
-      
-        </div>
         <div class="order-summary">
           <div class="order-summary-detail">
             <div class="payment-detail">
               <h3 class="fw-bold">Order Summary</h3>
-              <div class="input-coupon">
-                <input class="input-coupon" type="text" placeholder="Enter Coupon Code">
-                <button type="button" class="btn btn-apply-coupon fw-3">Apply Coupon</button>
+              <div class="input-group mb-3 input-coupon">
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default">
+                  <button type="button" class="btn btn-outline-dark btn-claim">Claim your coupon for a 10% discount!"</button>
               </div>
               <h4 class="fw-bold" style="margin-top: 20px;">Payment Details</h4>
               <div class="form-check">
@@ -160,19 +139,19 @@
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="shopcart-card" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="shopcart-card">
                 <label class="form-check-label" for="shopcart-card">
                   Shopcart card
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="paypal" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="paypal">
                 <label class="form-check-label" for="paypal-card">
                   Paypal
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="credit-or-debit-card" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="credit-or-debit-card">
                 <label class="form-check-label" for="credit-or-debit-card">
                   Credit or Debit Card
                 </label>
@@ -197,12 +176,39 @@
                 loading="lazy" alt=""></div>
           </div>
           <div class="email">
-            <div><h5 class="fw-bold">Email*</h5></div>
-            <input type="text" id="email" name="email" required placeholder="Type here..."/>
+            <div>
+              <h5 class="fw-bold">Email*</h5>
+            </div>
+            <input type="text" id="email" name="email" required placeholder="Type here..." />
           </div>
           <div class="cardholder-name">
-            <div><h5 class="fw-bold">Cardholder Name*</h5></div>
-            <input type="text" id="cardholder-name" name="cardholder-name" required placeholder="Type here..."/>
+            <div>
+              <h5 class="fw-bold">Cardholder Name*</h5>
+            </div>
+            <input type="text" id="cardholder-name" name="cardholder-name" required placeholder="Type here..." />
+          </div>
+        </div>
+
+        <div class="review-items">
+          <div class="review-items-content">
+            <div>
+              <h3 class="fw-bold">Reviews Item And Shipping</h3>
+            </div>
+            <div class="products-detail1-name-price">
+              <div class="image-detail">
+                <img class="image-detail-payment" alt="image-review-items"
+                  src="https://lzd-img-global.slatic.net/g/p/426e16cd243841b157a3fe087b07a460.jpg_80x80q80.jpg_.webp"
+                  data-spm-anchor-id="a2o4m.pdp_revamp.0.i3.6b56155fBnbKIj">
+              </div>
+              <div class="products-details">
+                <p class="fw-bold">Airpods-Max</p>
+                <p class="product-price fw-4">$549</p>
+              </div>
+              <div class="products-color">
+                <p class="fw-bold">Color : Pink</p>
+                <p class="fw-4">Quantity : 01</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
