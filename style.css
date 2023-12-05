@@ -346,6 +346,7 @@ ul.help-list {
     height: 100%;
     display: flex;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 .container-products-filter {
